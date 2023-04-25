@@ -7,8 +7,6 @@ RUN wget -O "${cncli_tar}" "https://github.com/cardano-community/cncli/releases/
     tar xvzf "${cncli_tar}" -C /usr/local/bin; \
     rm -f "${cncli_tar}"
 
-ENTRYPOINT [ "/usr/local/bin/cncli" ]
-
 
 FROM base as test
 RUN [ "/usr/local/bin/cncli", "--help" ]
