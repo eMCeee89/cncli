@@ -1,4 +1,4 @@
-FROM alpine:3 as base
+FROM alpine:3 AS base
 
 ARG cncli_version=6.3.0
 ARG cncli_tar=/tmp/cncli.tar.gz
