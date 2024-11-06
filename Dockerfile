@@ -10,3 +10,5 @@ RUN wget -O "${cncli_tar}" "https://github.com/cardano-community/cncli/releases/
 
 FROM base as test
 RUN [ "/usr/local/bin/cncli", "--help" ]
+
+FROM base AS final
