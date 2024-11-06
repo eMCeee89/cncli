@@ -1,6 +1,6 @@
 FROM alpine:3 AS base
 
-ARG cncli_version=6.3.0
+ARG cncli_version=6.5.1
 ARG cncli_tar=/tmp/cncli.tar.gz
 
 RUN wget -O "${cncli_tar}" "https://github.com/cardano-community/cncli/releases/download/v${cncli_version}/cncli-${cncli_version}-ubuntu22-x86_64-unknown-linux-musl.tar.gz"; \
